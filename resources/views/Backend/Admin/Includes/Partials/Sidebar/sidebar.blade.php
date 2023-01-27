@@ -832,6 +832,83 @@
                 </ul>
             </li>
 
+            <li
+            class="nav-item sidebar-nav-item
+            {{ $route == 'admin.accountmanagement.deposit.add' ? 'menu-active' : '' }}
+            {{ $route == 'admin.accountmanagement.expense.add' ? 'menu-active' : '' }}
+            {{ $route == 'admin.accountmanagement.cashbook.list' ? 'menu-active' : '' }}
+                {{ $route == 'admin.accountmanagement.fund.list' ? 'menu-active' : '' }}
+                 {{ $route == 'admin.accountmanagement.head.list' ? 'menu-active' : '' }}
+
+               ">
+
+            <a href="#"
+               class="nav-link
+                    {{ $route == 'admin.accountmanagement.fund.list' ? 'menu-active' : '' }}">
+                <i class="fa-solid fa-file-invoice-dollar"></i><span>Accounting</span></a>
+            <ul
+                class="nav sub-group-menu menu-open
+                    {{ $route == 'admin.accountmanagement.fund.list' ? 'sub-group-active' : '' }}
+                     {{ $route == 'admin.accountmanagement.deposit.add' ? 'sub-group-active' : '' }}
+                      {{ $route == 'admin.accountmanagement.expense.add' ? 'sub-group-active' : '' }}
+                       {{ $route == 'admin.accountmanagement.cashbook.list' ? 'sub-group-active' : '' }}
+                        {{ $route == 'admin.accountmanagement.head.list' ? 'sub-group-active' : '' }}
+                    ">
+
+                <li class="nav-item {{ $route == 'admin.accountmanagement.deposit.add' ? 'menu-active' : '' }}">
+                    <a href="{{ route('admin.accountmanagement.deposit.add') }}"
+                       class="nav-link {{ $route == 'admin.accountmanagement.deposit.add' ? 'menu-active' : '' }} ">
+                        <i class="fas fa-angle-right"></i>Deposit</a>
+                </li>
+
+                <li class="nav-item {{ $route == 'admin.accountmanagement.expense.add' ? 'menu-active' : '' }}">
+                    <a href="{{ route('admin.accountmanagement.expense.add') }}"
+                       class="nav-link {{ $route == 'admin.accountmanagement.expense.add' ? 'menu-active' : '' }} ">
+                        <i class="fas fa-angle-right"></i>Expense</a>
+                </li>
+
+                <li class="nav-item {{ $route == 'admin.accountmanagement.cashbook.list' ? 'menu-active' : '' }}">
+                    <a href="{{ route('admin.accountmanagement.cashbook.list') }}"
+                       class="nav-link {{ $route == 'admin.accountmanagement.cashbook.list' ? 'menu-active' : '' }} ">
+                        <i class="fas fa-angle-right"></i>Cashbook</a>
+                </li>
+
+
+                <li class="nav-item {{ $route == 'admin.accountmanagement.fund.list' ? 'menu-active' : '' }}">
+                    <a href="{{ route('admin.accountmanagement.fund.list') }}"
+                       class="nav-link {{ $route == 'admin.accountmanagement.fund.list' ? 'menu-active' : '' }} ">
+                        <i class="fas fa-angle-right"></i>Funds</a>
+                </li>
+
+
+                <li
+                    class="nav-item sidebar-nav-item
+                {{ $route == 'admin.accountmanagement.head.list' ? 'menu-active' : '' }}
+
+               ">
+
+                    <a href="#"
+                       class="nav-link
+                    {{ $route == 'admin.accountmanagement.head.list' ? 'menu-active' : '' }}">
+                        <i class="fa-solid fa-cog"></i><span>Account Settings</span></a>
+                    <ul
+                        class="nav sub-group-menu menu-open
+                    {{ $route == 'admin.accountmanagement.head.list' ? 'sub-group-active' : '' }}
+                    ">
+                        <li class="nav-item {{ $route == 'admin.accountmanagement.head.list' ? 'menu-active' : '' }}">
+                            <a href="{{ route('admin.accountmanagement.head.list') }}"
+                               class="nav-link {{ $route == 'admin.accountmanagement.head.list' ? 'menu-active' : '' }} ">
+                                <i class="fas fa-angle-right"></i>Account Heads</a>
+                        </li>
+
+
+                    </ul>
+                </li>
+
+
+            </ul>
+        </li>
+
             <li class="nav-item sidebar-nav-item
                     {{-- {{ $route == 'admin.smsEmail.index' ? 'menu-active' : '' }} --}}
 

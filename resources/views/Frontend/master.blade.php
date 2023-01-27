@@ -23,7 +23,7 @@ $title_name = \App\Models\GeneralSettings::find(1);
         type="image/png"
         href="{{asset('assets/frontend')}}/image/favicon/favicon.png"
     />
-    <title>@yield('title') | {{ $title_name->website_name }}</title>
+    <title>@yield('title') | {{ $title_name->website_name ?? '' }}</title>
     <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
     <!-- Bootstrap -->
     <link

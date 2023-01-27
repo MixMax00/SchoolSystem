@@ -10,7 +10,7 @@
           <div class="row justify-content-center section_padding">
             <div class="col-lg-4 form">
               <div class="input-group mb-3" style="width: 100%">
-               <h5 style="color: orange">{{ $general->website_name }}</h5>
+               <h5 style="color: orange">{{ $general->website_name ?? ''}}</h5>
               </div>
               <a href="{{ route('frontend') }}">
                 <img
@@ -30,7 +30,7 @@
                             font-size: 20px;
                             color: orange;
                             "
-                            class="fab fa-{{ $social_icon->icon }}"
+                            class="fab fa-{{ $social_icon->icon ?? ''}}"
 
                         ></i>
 
@@ -46,14 +46,14 @@
                 <ul>
                   <li style="font-size: 12px;color:#cddaf0; margin-bottom:10px; font-wight:700;">
 
-                    <a href="tel:{{ $general->phone }}">{{ $general->phone }}</a>
+                    <a href="tel:{{ $general->phone ?? '' }}">{{ $general->phone ?? '' }}</a>
                   </li>
                   <li style="font-size: 12px;color:#cddaf0; margin-bottom:10px; font-wight:700;">
-                    <a class="email" title="Email a friend" href="#" onclick="javascript:window.location='mailto:?subject=Application to session&body=: ' + window.location;">{{ $general->email }}</a>
+                    <a class="email" title="Email a friend" href="#" onclick="javascript:window.location='mailto:?subject=Application to session&body=: ' + window.location;">{{ $general->email ?? '' }}</a>
 
                   </li>
                   <li style="font-size: 12px;color:#cddaf0; margin-bottom:10px; font-wight:700;">
-                    <a href="http://maps.google.com/?q={{ $general->address }}">{{ $general->address }}</a>
+                    <a href="http://maps.google.com/?q={{ $general->address ?? '' }}">{{ $general->address ?? ''}}</a>
                   {{--   498 Street Area, <br />Dhaka, Bangladesh. --}}
                   </li>
                 </ul>
@@ -103,7 +103,7 @@
             class="row d-flex justify-content-center align-items-center text-center"
           >
             <p class="copyright mb-3">
-             {{$general->footer }}
+             {{$general->footer ?? '' }}
             </p>
           </div>
         </div>

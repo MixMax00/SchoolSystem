@@ -207,15 +207,10 @@
                         </div>
                         <div class="para">
                             <p>
-                               {!! Str::limit($school_section->short_description, '500','') !!}
+                               {!! Str::limit($school_section->short_description, '500','')  !!}
                             </p>
                         </div>
-                      {{--   <ul class="ps-5">
-                            <li><i class="fas fa-check me-2"></i> primary program</li>
-                            <li><i class="fas fa-check me-2"></i> primary program</li>
-                            <li><i class="fas fa-check me-2"></i> primary program</li>
-                            <li><i class="fas fa-check me-2"></i> primary program</li>
-                        </ul> --}}
+
                         <div class="button-primary mt-5 mb-3">
                             <a href="{{ route('frontend.about') }}" class="btn"> More Details </a>
                         </div>

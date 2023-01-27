@@ -82,11 +82,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> {{ $settings->website_name }} | Login</title>
+    <title> {{ $settings->website_name ?? '' }} | Login</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ $settings->favicon }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ $settings->favicon ?? '' }}">
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="{{asset('assets/backend')}}/css/normalize.css">
     <!-- Main CSS -->
@@ -124,7 +124,7 @@
                     <i class="far fa-envelope"></i>
                 </div>
                 @error('email')
-                <div class="alert alert-danger">{{ $message }}</div>
+                <div class="alert alert-danger">{{ $message ?? ''}}</div>
                 @enderror
                 <div class="form-group">
                     <label class="text-white">Password</label>
@@ -132,7 +132,7 @@
                     <i class="fas fa-lock"></i>
                 </div>
                 @error('password')
-                <div class="alert alert-danger">{{ $message }}</div>
+                <div class="alert alert-danger">{{ $message ?? ''}}</div>
                 @enderror
                 <div class="form-group d-flex align-items-center justify-content-between">
                     <div class="form-check">

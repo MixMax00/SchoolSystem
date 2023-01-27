@@ -13,8 +13,14 @@ return [
     |
     */
 
+    // 'paths' => [
+    //     resource_path('views'),
+
+    // ],
+
     'paths' => [
         resource_path('views'),
+        base_path('modules/AccountingManagement/Resources/views'),
     ],
 
     /*
