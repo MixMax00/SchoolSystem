@@ -1,0 +1,102 @@
+.gallery-details-page {
+  .modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: end;
+    justify-content: end;
+    padding: 1rem 1rem;
+    border-bottom: unset;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+    h5 {
+      color: var(--color-white);
+    }
+    .btn-close {
+      color: var(--color-white);
+      background-color: var(--color-white);
+      padding: 10px;
+    }
+  }
+  .modal-content {
+    background-color: transparent;
+    border: unset;
+  }
+  .banner {
+    @media (max-width: 575.98px) {
+      .mt-4 {
+        margin-top: 0rem !important;
+      }
+    }
+    .bg_img1 {
+      transition: 0.5s all;
+      position: relative;
+      width: 100%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      h3 {
+        color: var(--color-white);
+        font-size: 32px;
+        span {
+          color: var(--secondary-color);
+        }
+        @media (max-width: 767.98px) {
+          font-size: 24px;
+        }
+        @media (max-width: 575.98px) {
+          font-size: 18px;
+        }
+      }
+      p {
+        color: var(--color-white);
+        font-size: 12px;
+        @media (max-width: 767.98px) {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+      a {
+        color: var(--color-white);
+        font-size: 18px;
+        i {
+          color: var(--secondary-color);
+        }
+        @media (max-width: 575.98px) {
+          font-size: 12px;
+        }
+      }
+      .carousel-caption {
+        position: absolute;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        padding-top: 100px;
+        padding: 10%;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        @media (max-width: 991.98px) {
+          padding: 10%;
+        }
+      }
+    }
+  }
+  .para {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: justify;
+
+    text-transform: capitalize;
+  }
+  // .img {
+  //   width: 300px;
+  //   height: 250px;
+  // }
+}

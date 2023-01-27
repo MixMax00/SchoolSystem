@@ -1,0 +1,58 @@
+.contact-page {
+  .contact {
+    .card {
+      background-color: #ddd;
+      border: unset;
+      i {
+        font-size: 24px;
+        color: var(--secondary-color);
+        margin-top: 1rem;
+      }
+      h6 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 10px;
+      }
+      a {
+        font-size: 14px;
+      }
+    }
+    .social_icon {
+      padding-top: 1.5rem;
+      .sicon {
+        color: var(--secondary-color);
+      }
+
+      ul {
+        padding-left: unset;
+        margin-bottom: unset;
+
+        li {
+          padding: 0px 10px 0px 0px;
+
+          a {
+            font-size: 1.25rem;
+            color: var(--color-white);
+            transition: 0.4s all;
+
+            &:hover {
+              color: var(--button-color);
+              transition: 0.4s all;
+              transform: scale(1);
+            }
+          }
+        }
+      }
+
+      @media (max-width: 991.98px) {
+        padding-top: 0.5rem;
+        margin-bottom: 2rem;
+      }
+
+      @media (max-width: 767.98px) {
+        margin-bottom: 2rem;
+        padding-top: 0rem;
+      }
+    }
+  }
+}

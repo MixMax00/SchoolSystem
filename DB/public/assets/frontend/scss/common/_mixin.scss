@@ -1,0 +1,90 @@
+@mixin font-family-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+@mixin menu {
+  color: var(--color-black);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@mixin in_out($all) {
+  transition: all $all ease-in-out;
+  -webkit-transition: all $all ease-in-out;
+  -moz-transition: all $all ease-in-out;
+  -ms-transition: all $all ease-in-out;
+  -o-transition: all $all ease-in-out;
+}
+
+@mixin transition-in-out {
+  transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+@mixin transform-50 {
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+}
+
+@mixin title {
+  color: var(--color-black);
+  font-size: 32px;
+  font-weight: 600;
+}
+
+@mixin br-4px {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+@mixin br-6px {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+@mixin br-8px {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+// Transition
+@mixin transition($second) {
+  -webkit-transition: all $second ease;
+  -o-transition: all $second ease;
+  -moz-transition: all $second ease;
+  transition: all $second ease;
+}
+
+@mixin transition_in_out {
+  transition: all 0.03s ease-in-out;
+}
+
+// Transform
+@mixin transformX($translateX) {
+  -webkit-transform: translateX($translateX);
+  -moz-transform: translateX($translateX);
+  -ms-transform: translateX($translateX);
+  -o-transform: translateX($translateX);
+  transform: translateX($translateX);
+}
+@mixin transform($scale) {
+  -webkit-transform: scale($scale);
+  -moz-transform: scale($scale);
+  -ms-transform: scale($scale);
+  -o-transform: scale($scale);
+  transform: scale($scale);
+}

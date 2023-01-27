@@ -1,0 +1,326 @@
+.langing-page1 {
+  .banner {
+    @media (max-width: 575.98px) {
+      .mt-4 {
+        margin-top: 0rem !important;
+      }
+    }
+    .bg_img1 {
+      transition: 0.5s all;
+      position: relative;
+      width: 100%;
+
+      // background-blend-mode: multiply;
+      // background-color: rgba(8, 8, 49, 0.7);
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      h1 {
+        color: var(--color-white);
+
+        span {
+          color: var(--secondary-color);
+        }
+        @media (max-width: 991.98px) {
+          font-size: 32px;
+        }
+        @media (max-width: 767.98px) {
+          font-size: 24px;
+        }
+        @media (max-width: 575.98px) {
+          font-size: 18px;
+        }
+      }
+      p {
+        color: var(--color-white);
+        font-size: 12px;
+        @media (max-width: 767.98px) {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+      a {
+        color: var(--color-white);
+        font-size: 18px;
+        i {
+          color: var(--secondary-color);
+        }
+        @media (max-width: 575.98px) {
+          font-size: 12px;
+        }
+      }
+      ::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+      }
+      .carousel-caption {
+        position: absolute;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        padding-top: 100px;
+        padding: 9% 25%;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        // transform: translate(-50%, -50%);
+
+        background: rgba(0, 0, 0, 0.6);
+        @media (max-width: 1399.98px) {
+          padding: 5% 20%;
+        }
+        @media (max-width: 991.98px) {
+          padding: 5%;
+        }
+      }
+    }
+  }
+
+  // .banner {
+  //   background-image: url("../image/banner/IESummerSchool.jpg");
+  //   background-position: center;
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-attachment: fixed;
+  //   position: relative;
+  //   width: 100%;
+  //   background-blend-mode: multiply;
+  //   background-color: rgba(8, 8, 49, 0.7);
+  //   h1 {
+  //     color: var(--color-white);
+  //     span {
+  //       color: var(--secondary-color);
+  //     }
+  //   }
+  //   p {
+  //     color: var(--color-white);
+  //     font-size: 12px;
+  //   }
+  //   a {
+  //     color: var(--color-white);
+  //     font-size: 18px;
+  //     i {
+  //       color: var(--secondary-color);
+  //     }
+  //     @media (max-width: 575.98px) {
+  //       font-size: 12px;
+  //     }
+  //   }
+  // }
+  section.notice {
+    .warp {
+      height: 100%;
+    }
+    .img {
+      height: 200px;
+      border: 3px solid var(--color-black);
+    }
+    .div {
+      // border: 1px solid var(--secondary-color);
+      box-shadow: 3px 6px 23px -10px rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+
+      p {
+        font-size: 14px;
+        a {
+          color: var(--secondary-color);
+          font-size: 16px;
+        }
+      }
+    }
+    .div-2 {
+      // border: 1px solid var(--secondary-color);
+      // padding: 1rem;
+
+      p {
+        font-weight: 500;
+        font-size: 18px !important;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        @media (max-width: 1399.98px) {
+          font-size: 12px !important;
+        }
+        @media (max-width: 575.98px) {
+          font-size: 12px !important;
+        }
+      }
+      .date {
+        a {
+          font-size: 16px;
+          color: var(--secondary-color);
+          i {
+            color: var(--secondary-color);
+          }
+          &.download_btn {
+            background-color: var(--secondary-color);
+            color: var(--color-black);
+            font-weight: 600;
+          }
+          @media (max-width: 1399.98px) {
+            font-size: 12px !important;
+          }
+          @media (max-width: 575.98px) {
+            font-size: 12px !important;
+          }
+        }
+      }
+    }
+  }
+  section.about {
+    .title {
+      h3 {
+        color: var(--secondary-color);
+        font-weight: 600;
+        span {
+          color: var(--primary-color);
+        }
+      }
+    }
+    .para {
+      p {
+        font-size: 12px;
+        text-align: justify;
+      }
+    }
+    ul {
+      li {
+        font-size: 14px;
+        i {
+          color: var(--secondary-color);
+        }
+      }
+    }
+    img {
+      outline: 3px solid var(--secondary-color);
+      padding: 0.5rem;
+    }
+  }
+  section.event {
+    .head {
+      h2 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 48px;
+        /* identical to box height */
+
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+
+        color: #030c3d;
+      }
+    }
+    .title {
+      h3 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        /* identical to box height */
+
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+
+        color: #030c3d;
+      }
+    }
+    .para {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 0.05em;
+      text-transform: capitalize;
+
+      color: #333333;
+    }
+    .border_event1 {
+      // border-top: 1px solid var(--secondary-color);
+      // border-bottom: 1px solid var(--secondary-color);
+      // border-left: 1px solid var(--secondary-color);
+    }
+    .border_event2 {
+      // border-top: 1px solid var(--secondary-color);
+      // border-bottom: 1px solid var(--secondary-color);
+      // border-right: 1px solid var(--secondary-color);
+      @media (max-width: 575.98px) {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+  section.teacher {
+    .card {
+      background-color: #f2f2f6;
+      box-shadow: 3px 6px 23px -10px rgba(0, 0, 0, 0.5);
+      // border: 1px solid var(--primary-color);
+      height: 100%;
+      border: unset;
+      .details {
+        padding-top: 1rem;
+        background-color: var(--secondary-color);
+        // :hover {
+        //   background-color: var(--primary-color);
+        // }
+      }
+    }
+    img {
+    }
+    span {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  section.galleries {
+    /* -------------------------------Team Style Two--------------------------*/
+  }
+  @media (max-width: 1399.98px) {
+    section.notice {
+      .warp {
+        height: 100%;
+      }
+      .img {
+        height: 200px;
+        border: 3px solid var(--color-black);
+      }
+      .div {
+        padding: 1rem;
+
+        p {
+          font-size: 12px;
+          a {
+            color: var(--secondary-color);
+            font-size: 16px;
+          }
+        }
+      }
+      .div-2 {
+        padding: 1rem;
+
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 30px;
+          letter-spacing: 0.05em;
+          text-transform: capitalize;
+        }
+        .date {
+          a {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

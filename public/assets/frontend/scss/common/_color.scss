@@ -1,0 +1,28 @@
+$primary-color: #030c3d;
+$secondary-color: #ffa601;
+$color-white: #ffffff;
+$color-black: #000000;
+$button-color: #554d9b;
+$button-hover-color: #b80b0b;
+$text-secondary: #686565;
+$bg-secondary: #f4f6fc;
+$bg-third: #cddaf0;
+
+// section header color
+$text-header-color: #24262b;
+$text-para-color: #4a5073;
+
+:root {
+  // RIGHT, will work in all Sass versions.
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --color-white: #{$color-white};
+  --button-color: #{$button-color};
+  --button-hover-color: #{$button-hover-color};
+  --color-black: #{$color-black};
+  --text-secondary: #{$text-secondary};
+  --bg-secondary: #{$bg-secondary};
+  --bg-third: #{$bg-third};
+  --text-header-color: #{$text-header-color};
+  --text-para-color: #{$text-para-color};
+}

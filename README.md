@@ -1,2 +1,1 @@
-# SchoolSystem
-SchoolSystem
+# SingelSchoolManagementSystem

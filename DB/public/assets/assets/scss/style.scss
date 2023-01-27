@@ -1,0 +1,55 @@
+// Header Logo
+.report_header{
+    padding: 96px 0;
+
+    .container{
+        // Header wrap
+        .header_wrap{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .logo_item{
+                max-width: 150px;
+
+            }
+        }
+
+        // title_wrap
+        .title_wrap{
+            .title{
+                text-align: center;
+                h2, h4{
+                    text-decoration: underline;
+                }
+
+                h4{
+                    color: gray;
+                }
+            }
+
+            .row{
+                .col{
+                    .item{
+                        h2{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Table
+
+        // Signature
+        .report_signature{
+            .participant_name{
+                margin-left: 110px;
+            }
+
+            h4{
+                text-decoration: underline;
+            }
+        }
+    }
+}

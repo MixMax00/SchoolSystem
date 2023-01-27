@@ -1,0 +1,174 @@
+.gallery-page {
+  .banner {
+    @media (max-width: 575.98px) {
+      .mt-4 {
+        margin-top: 0rem !important;
+      }
+    }
+    .bg_img1 {
+      transition: 0.5s all;
+      position: relative;
+      width: 100%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      h3 {
+        color: var(--color-white);
+        font-size: 32px;
+        span {
+          color: var(--secondary-color);
+        }
+        @media (max-width: 767.98px) {
+          font-size: 24px;
+        }
+        @media (max-width: 575.98px) {
+          font-size: 18px;
+        }
+      }
+      p {
+        color: var(--color-white);
+        font-size: 12px;
+        @media (max-width: 767.98px) {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+      a {
+        color: var(--color-white);
+        font-size: 18px;
+        i {
+          color: var(--secondary-color);
+        }
+        @media (max-width: 575.98px) {
+          font-size: 12px;
+        }
+      }
+      .carousel-caption {
+        position: absolute;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        padding-top: 100px;
+        padding: 10%;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        @media (max-width: 991.98px) {
+          padding: 10%;
+        }
+      }
+    }
+  }
+  .para {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: justify;
+
+    text-transform: capitalize;
+  }
+  .img {
+    width: 300px;
+    height: 250px;
+    background-color: red;
+    position: relative;
+  }
+  .div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+  /*---Testimonial 05---*/
+  .review5 {
+    .overlay5 {
+      background-image: url("../image/banner/events.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 10px;
+      .single-review5 {
+        padding: 40px 40px;
+        margin-bottom: 40px;
+        position: relative;
+        -webkit-box-shadow: 0 10px 10px rgba(47, 72, 88, 0.2);
+        box-shadow: 0 10px 10px rgba(47, 72, 88, 0.2);
+        border-radius: 10px;
+        background: rgba(2, 28, 255, 0.4);
+        text-align: center;
+        p {
+          font-size: 18px;
+          line-height: 32px;
+          color: var(--color-white);
+          font-weight: 400;
+          font-style: italic;
+          margin-bottom: unset;
+          &:before {
+            content: "";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 700;
+            font-size: 40px;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            opacity: 0.5;
+            color: rgba(255, 255, 255, 0.2);
+          }
+        }
+      }
+
+      .review-text5 {
+        h4 {
+          margin-bottom: unset;
+          font-size: 17px;
+          color: var(--color-white);
+          font-weight: 600;
+          font-style: italic;
+        }
+
+        p {
+          padding: 0;
+          font-size: 12px;
+          color: rgb(226, 61, 49);
+          font-weight: 600;
+          font-style: italic;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+  @media (max-width: 575.98px) {
+    .review5 {
+      .overlay5 {
+        .single-review5 {
+          p {
+            font-size: 14px;
+            line-height: 22px;
+
+            &:before {
+              height: 40px;
+              width: 40px;
+            }
+          }
+        }
+
+        .review-text5 {
+          h4 {
+            font-size: 12px;
+          }
+
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

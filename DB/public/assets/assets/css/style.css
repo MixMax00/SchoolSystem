@@ -1,0 +1,29 @@
+.report_header {
+  padding: 96px 0;
+}
+.report_header .container .header_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.report_header .container .header_wrap .logo_item {
+  max-width: 150px;
+}
+.report_header .container .title_wrap .title {
+  text-align: center;
+}
+.report_header .container .title_wrap .title h2, .report_header .container .title_wrap .title h4 {
+  text-decoration: underline;
+}
+.report_header .container .title_wrap .title h4 {
+  color: gray;
+}
+.report_header .container .title_wrap .row .col .item h2 {
+  text-decoration: underline;
+}
+.report_header .container .report_signature .participant_name {
+  margin-left: 110px;
+}
+.report_header .container .report_signature h4 {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
