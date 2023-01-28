@@ -779,58 +779,58 @@
 
             @role('admin')
 
-            <li class="nav-item sidebar-nav-item
-                    {{ $route == 'admin.accounting.index' ? 'menu-active' : '' }}
-                    {{ $route == 'admin.accounting.expanse' ? 'menu-active' : '' }}
-                    {{ $route == 'admin.accounting.manageAccounting' ? 'menu-active' : '' }}
-                    {{ $route == 'admin.empsalary.index' ? 'menu-active' : '' }}
-                    {{ $route == 'admin.accounting.allExpance' ? 'menu-active' : '' }}
+{{--            <li class="nav-item sidebar-nav-item--}}
+{{--                    {{ $route == 'admin.accounting.index' ? 'menu-active' : '' }}--}}
+{{--                    {{ $route == 'admin.accounting.expanse' ? 'menu-active' : '' }}--}}
+{{--                    {{ $route == 'admin.accounting.manageAccounting' ? 'menu-active' : '' }}--}}
+{{--                    {{ $route == 'admin.empsalary.index' ? 'menu-active' : '' }}--}}
+{{--                    {{ $route == 'admin.accounting.allExpance' ? 'menu-active' : '' }}--}}
 
-                    ">
+{{--                    ">--}}
 
-                <a href="#" class="nav-link
-                    {{ $route == 'admin.accounting.index' ? 'menu-active' : '' }}
-                    {{ $route == 'admin.accounting.allExpance' ? 'menu-active' : '' }}
-                    {{ $route == 'admin.empsalary.index' ? 'menu-active' : '' }}
-                    {{ $route == 'admin.accounting.manageAccounting' ? 'menu-active' : '' }}
-                    {{ $route == 'admin.accounting.expanse' ? 'menu-active' : '' }}">
-                  <i class="far fa-money-bill-alt" aria-hidden="true"></i><span>Accounting</span></a>
-                <ul class="nav sub-group-menu menu-open
-                {{ $route == 'admin.accounting.index' ? 'sub-group-active' : '' }}
-                {{ $route == 'admin.accounting.allExpance' ? 'sub-group-active' : '' }}
-                {{ $route == 'admin.empsalary.index' ? 'sub-group-active' : '' }}
-                {{ $route == 'admin.accounting.manageAccounting' ? 'sub-group-active' : '' }}
-                {{ $route == 'admin.accounting.expanse' ? 'sub-group-active' : '' }}">
+{{--                <a href="#" class="nav-link--}}
+{{--                    {{ $route == 'admin.accounting.index' ? 'menu-active' : '' }}--}}
+{{--                    {{ $route == 'admin.accounting.allExpance' ? 'menu-active' : '' }}--}}
+{{--                    {{ $route == 'admin.empsalary.index' ? 'menu-active' : '' }}--}}
+{{--                    {{ $route == 'admin.accounting.manageAccounting' ? 'menu-active' : '' }}--}}
+{{--                    {{ $route == 'admin.accounting.expanse' ? 'menu-active' : '' }}">--}}
+{{--                  <i class="far fa-money-bill-alt" aria-hidden="true"></i><span>Accounting</span></a>--}}
+{{--                <ul class="nav sub-group-menu menu-open--}}
+{{--                {{ $route == 'admin.accounting.index' ? 'sub-group-active' : '' }}--}}
+{{--                {{ $route == 'admin.accounting.allExpance' ? 'sub-group-active' : '' }}--}}
+{{--                {{ $route == 'admin.empsalary.index' ? 'sub-group-active' : '' }}--}}
+{{--                {{ $route == 'admin.accounting.manageAccounting' ? 'sub-group-active' : '' }}--}}
+{{--                {{ $route == 'admin.accounting.expanse' ? 'sub-group-active' : '' }}">--}}
 
-                    <li class="nav-item {{ $route == 'admin.accounting.index' ? 'menu-active' : '' }}">
-                        <a href="{{ route('admin.accounting.index') }}"
-                            class="nav-link {{ $route == 'admin.accounting.index' ? 'menu-active' : '' }}">
-                            <i class="fas fa-angle-right"></i>Add Student Fee</a>
-                    </li>
-                    <li class="nav-item {{ $route == 'admin.accounting.expanse' ? 'menu-active' : '' }}">
-                        <a href="{{ route('admin.accounting.expanse') }}"
-                            class="nav-link {{ $route == 'admin.accounting.expanse' ? 'menu-active' : '' }}">
-                            <i class="fas fa-angle-right"></i>Expanse</a>
-                    </li>
+{{--                    <li class="nav-item {{ $route == 'admin.accounting.index' ? 'menu-active' : '' }}">--}}
+{{--                        <a href="{{ route('admin.accounting.index') }}"--}}
+{{--                            class="nav-link {{ $route == 'admin.accounting.index' ? 'menu-active' : '' }}">--}}
+{{--                            <i class="fas fa-angle-right"></i>Add Student Fee</a>--}}
+{{--                    </li>--}}
+{{--                    <li class="nav-item {{ $route == 'admin.accounting.expanse' ? 'menu-active' : '' }}">--}}
+{{--                        <a href="{{ route('admin.accounting.expanse') }}"--}}
+{{--                            class="nav-link {{ $route == 'admin.accounting.expanse' ? 'menu-active' : '' }}">--}}
+{{--                            <i class="fas fa-angle-right"></i>Expanse</a>--}}
+{{--                    </li>--}}
 
-                    <li class="nav-item {{ $route == 'admin.accounting.allExpance' ? 'menu-active' : '' }}">
-                        <a href="{{ route('admin.accounting.allExpance') }}"
-                            class="nav-link {{ $route == 'admin.accounting.allExpance' ? 'menu-active' : '' }}">
-                            <i class="fas fa-angle-right"></i>All Expanse</a>
-                    </li>
+{{--                    <li class="nav-item {{ $route == 'admin.accounting.allExpance' ? 'menu-active' : '' }}">--}}
+{{--                        <a href="{{ route('admin.accounting.allExpance') }}"--}}
+{{--                            class="nav-link {{ $route == 'admin.accounting.allExpance' ? 'menu-active' : '' }}">--}}
+{{--                            <i class="fas fa-angle-right"></i>All Expanse</a>--}}
+{{--                    </li>--}}
 
-                    <li class="nav-item {{ $route == 'admin.empsalary.index' ? 'menu-active' : '' }}">
-                        <a href="{{ route('admin.empsalary.index') }}"
-                            class="nav-link {{ $route == 'admin.empsalary.index' ? 'menu-active' : '' }}">
-                            <i class="fas fa-angle-right"></i>Employee Salery Manage</a>
-                    </li>
-                    <li class="nav-item {{ $route == 'admin.accounting.manageAccounting' ? 'menu-active' : '' }}">
-                        <a href="{{ route('admin.accounting.manageAccounting') }}"
-                            class="nav-link {{ $route == 'admin.accounting.manageAccounting' ? 'menu-active' : '' }}">
-                            <i class="fas fa-angle-right"></i>Manage Account</a>
-                    </li>
-                </ul>
-            </li>
+{{--                    <li class="nav-item {{ $route == 'admin.empsalary.index' ? 'menu-active' : '' }}">--}}
+{{--                        <a href="{{ route('admin.empsalary.index') }}"--}}
+{{--                            class="nav-link {{ $route == 'admin.empsalary.index' ? 'menu-active' : '' }}">--}}
+{{--                            <i class="fas fa-angle-right"></i>Employee Salery Manage</a>--}}
+{{--                    </li>--}}
+{{--                    <li class="nav-item {{ $route == 'admin.accounting.manageAccounting' ? 'menu-active' : '' }}">--}}
+{{--                        <a href="{{ route('admin.accounting.manageAccounting') }}"--}}
+{{--                            class="nav-link {{ $route == 'admin.accounting.manageAccounting' ? 'menu-active' : '' }}">--}}
+{{--                            <i class="fas fa-angle-right"></i>Manage Account</a>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
 
             <li
             class="nav-item sidebar-nav-item
